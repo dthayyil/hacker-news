@@ -17,27 +17,17 @@ class NewsFeed extends React.Component {
 
   componentDidMount() {
     this.getNewsList();
-  }
-
-  /**
-   * fetch more news
-   */
+  } 
   nextNews() {
     page += 1;
     this.getNewsList(page, this.state.activeTab);
   }
 
-  /**
-   * returning hidden posts from local storage
-   */
   getHiddenPost = () => {
     let hiddenItems = localStorage.getItem("hiddenItems");
     return hiddenItems ? JSON.parse(hiddenItems) : [];
   };
-
-  /**
-   * hide the news from feed
-   */
+ 
   hidePost(data) {
     const id = data.newsData.objectID;
     const hiddenPost = this.getHiddenPost();
@@ -50,10 +40,7 @@ class NewsFeed extends React.Component {
     this.setState({
       newsData
     });
-  }
-  /**
-   * get visisible news
-   */
+  } 
   getVisibleNews = hits => {
     let hiddenItems = localStorage.getItem("hiddenItems");
     if (hiddenItems) {

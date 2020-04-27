@@ -1,5 +1,5 @@
 {
-  "name": "hn-clone-starter",
+  "name": "hackernews",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -31,6 +31,10 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
     "stylelint": "^9.9.0",
-    "stylelint-config-standard": "^18.2.0"
+    "stylelint-config-standard": "^18.2.0",
+    "browserify": "^16.5.1",
+    "create-react-class": "^15.6.3",
+    "literalify": "^0.4.0",   
+    "react-dom-factories": "^1.0.2"
   }
 }
